@@ -1,0 +1,15 @@
+@keyframes spinner {
+    from { transform: rotate(0deg);}
+    to {
+        transform: rotate(359deg);
+    }
+}
+.loading svg {
+    animation: spinner 2s infinite;
+}
+
+.loading {
+    font-family: 'Muli', sans-serif;
+    font-size: 1.1em;
+}
+

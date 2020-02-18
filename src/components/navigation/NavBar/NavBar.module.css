@@ -1,0 +1,33 @@
+.main ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+.main ul li a {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #333;
+    font-family: 'Muli', sans-serif;
+}
+
+.main ul li::after {
+    display: block;
+    content: '';
+    width: 0%;
+    margin-top: 5px;
+    height: 2px;
+    background-color: #3b4ce9;
+}
+
+.main ul li:hover::after {
+    width: 100%;
+    transition: width 0.5s;
+}
+
+.main {
+    text-align: right;
+    flex: 1;
+    margin-top: 5px;
+}

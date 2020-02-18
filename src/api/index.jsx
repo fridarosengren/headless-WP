@@ -1,0 +1,1 @@
+export { getProjects, getAboutPage, getOnePage } from './api';

@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* CSS RESET */
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Footer */
+footer {
+  color: #f7f7f7;
+  font-size: 0.9em;
+  margin-top: 40px;
+  text-align: center;
+  background-color: #333;
+  padding: 20px;
+  display: flex;
+  height: 80px;
+}
+
+footer span {
+  line-height: 70px;
+}
+
+.social-links, .copy {
+  flex: 1;
+}
+
+.social-links a {
+  font-size: 30px;
+  margin: 10px;
+  text-decoration: none;
+  line-height: 70px;
+  color: #f7f7f7;
+}
+
+.social-links a:hover {
+  color: #e93baf;
+}
+
+/* ////// */
+
+#presentation {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Site container */
+.container {
+  width: 95%;
+  margin: 0 auto;
+  padding: 2%;
+  margin-top: 10px;
+  background-color: #fff;
+}
+
+.wrapper {
+  min-height: 100vh;
+  margin-bottom: -160px;
+}
+
+p {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  font-size: 1.1em;
+  line-height: 150%;
+  margin-bottom: 20px;
+  font-family: 'Muli', sans-serif;
+}
+
+h2 {
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: normal;
+  font-size: 2em;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.flex-item-projects {
+  flex: 1 49%;
+  margin: 5px;
+  position: relative;
+}
+
+.flex-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Media queries */
+@media screen and (min-width: 900px){
+  .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* Project Image hover */
+figure {
+  width: 100%;
+  margin: 0px;
+}
+figure figcaption {
+  opacity: 0;
+  position: absolute;
+  background-color: #333;
+  bottom: 0px;
+  left: 0;
+  width: 94.5%;
+  height: 0;
+}
+
+figure:hover figcaption {
+  padding: 20px;
+  opacity: 1;
+  height: 50px;
+  transition: height 0.3s;
+}
+figure:hover img {
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+
+.project-title {
+  font-size: 1.5em;
+  font-weight: normal;
+  font-family: 'Abril fatface', cursive;
+  color: #fff;
+}
+.tags {
+  font-family: 'Musil', sans-serif;
+  color: #e93baf;
+}
+
+#selected-work {
+  margin-bottom: 160px;
+}
+
+#selected-work h2, #about h2 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #fff;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#selected-work h2::before, #selected-work h2::after,
+#about h2::before, #about h2::after  {
+  display: inline-block;
+  content: '';
+  width: 41%;
+  margin: 10px;
+  height: 2px;
+  background-color: #e93baf;
+}
+
+/* Scroll to top btn */
+.scroll-top-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 45px;
+  border: 0;
+  outline: none;
+  font-size: 2.5em;
+  color: #fff;
+  background-color: #333;
+  cursor: pointer;
+}
+
+/* Forms */
+input[type="text"], input[type="email"], textarea {
+  padding: 15px;
+  margin: 10px;
+  max-width: 600px;
+  width: 100%;
+  font-size: 1em;
+  font-family: 'Muli', sans-serif;
+  resize: none;
+  outline: none;
+  background-color: #333;
+  border: none;
+  color: #fff;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+  background-color: #464646;
+  transition: background-color 0.4s;
+}
+input[type="text"]:focus::placeholder, input[type="email"]:focus::placeholder, textarea:focus::placeholder {
+  color: transparent;
+  transition: color 0.4s;
+}
+
+input[type="submit"] {
+  border: none;
+  border-radius: 15px;
+  padding: 15px;
+  font-size: 1em;
+  font-family: 'Muli', sans-serif;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #ccc;
+}
+
+#contact {
+  text-align: center;
+}

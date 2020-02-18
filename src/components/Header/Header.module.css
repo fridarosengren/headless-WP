@@ -1,0 +1,47 @@
+/* ================= HEADER ====================*/
+.header {
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #dadada;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo {
+    flex: 1;
+}
+  
+.logo a {
+    text-decoration: none;
+    color: #333;
+}
+  
+.logo h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 2.5em;
+    font-weight: normal;
+    line-height: 40%;
+}
+
+/* Sticky nav */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    animation-name: smooth-navbar;
+    animation-duration: 1.5s;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #dadada;
+    z-index: 1000;
+    margin-top: 0px;
+}
+
+/* Animations */
+@keyframes smooth-navbar {
+    from { opacity: 0; }
+    to { opacity: 1; } 
+}
